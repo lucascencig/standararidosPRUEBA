@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorVioleta: #9810B3;
+    --colorNegro: #09010B;
+    --colorBlanco: #F9F9F9;
+    --colorRojo: #BB1818;
+
+    --fuenteBotones: 'Staatliches', cursive;
+    --fuenteLetras: 'Roboto', sans-serif; 
+}
+html{
+    scroll-behavior: smooth;
+}
+#full-container{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 10rem;
+    padding: 5px;
+    background-image: linear-gradient(180deg, var(--colorVioleta), var(--colorNegro) );
+    border-bottom: solid 1px silver;
+    margin-bottom: 20px;
+  
+}
+.logo{
+    position: absolute;
+    margin-top: 10px;
+    width: 300px;
+    height: 85px;
+    float:left;
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px 2px 0px 0px;
+}
+.icono-menu{
+    display: none;
+}
+
+/*BUSCADOR INTERNO*/
+      
+.buscar input{
+    margin-top: 100px;
+    position: absolute;
+   display: block;
+   text-align: center;
+   width: 300px;
+   height: 35px;
+   padding: 0 15px;
+   font-size: 15px;
+   color: #000000;
+   font-family: var(--fuenteLetras);
+   font-weight: bolder;
+   outline: none;
+   border: 1px solid #631772;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: all 0.6s ease;
+   background-color: #F9F9F9;
+}
+.buscar input:hover{
+    width: 500px;
+}
+.buscar input:focus{
+    width: 500px;
+}
+
+/*MENU*/
+
+#menu{
+    width: 100%;
+
+    .logo-menu{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    li{
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    li ul{
+        text-align: center;
+    }
+    
+}
+#menu a{
+    font-family: var(--fuenteBotones);
+    color: var(--colorBlanco);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+#menu ul li a:hover{
+    color: #BB1818;
+    transition: all 0.6s ease;
+    text-decoration: underline;
+}
+#menu ul li ul a{
+    display: none;
+    transition: all 0.6s ease-in;
+    
+}
+#menu ul li ul{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    width: 300px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+    font-family: var(--fuenteLetras); 
+}
+#menu li:hover > ul {
+    margin-top: 10px;
+    display: block;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+#menu li:hover > ul a{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 18px; 
+    padding: 10px 10px 0px 10px ;
+    transition: all 0.6s ease-in;
+    font-family: var(--fuenteLetras);
+    font-weight: 800;
+    border-bottom: solid grey 2px;
+    
+}
+
+
+.buscar{
+    
+    width: 600px;
+
+}
+.iconoMenu{
+    display: none;
+   
+}
+
+
+
+/*CONTENIDO*/
+
+#contenido{
+    width: 100%;
+}
+.contenidoMembranas{
+    width: 100%;
+    
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--colorNegro), var(--colorVioleta) );
+    margin-top: 50px;
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+    }
+
+    .footUno{
+        text-align: center;
+
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            transition: all 0.5s ease;
+        }
+        .iconowsp{
+            font-size: 30px;
+        }
+        .iconomsj{
+            font-size: 30px;
+        }
+        a:hover{
+            color: var(--colorRojo);
+            transition: all 0.5s ease;
+        }
+
+    }
+
+    .footDos{
+        text-align: center;
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{  
+            display: block;
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            transition: all 0.5s ease;
+        }
+        a:hover{
+            color: var(--colorRojo);
+            transition: all 0.5s ease;
+        }
+    }
+
+    .footTres{
+        text-align: center;
+        h3{
+            margin-top: 10px;
+            color: var(--colorBlanco);
+        }
+        a{  
+            display: block;
+            color: var(--colorBlanco);
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        .iconofb{
+            color: var(--colorBlanco);
+            transition: all 0.5s ease;
+        }
+        .iconofb:hover{
+            color: rgb(7, 7, 116);
+            transition: all 0.5s ease;
+        }
+        .iconoig{
+            color: var(--colorBlanco);
+            transition: all 0.5s ease;
+        }
+        .iconoig:hover{
+            color: rgb(192, 0, 192);
+            transition: all 0.5s ease;
+
+        }
+
+    }
+}

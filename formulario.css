@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--colorVioleta)), to(var(--colorNegro)));
+  background-image: linear-gradient(180deg, var(--colorVioleta), var(--colorNegro));
+}
+/*# sourceMappingURL=formulario.css.map */
